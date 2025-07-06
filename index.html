@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>麻雀点数計算サイト</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <h1>麻雀点数計算サイト</h1>
+  <form id="calcForm" action="/hoge">
+    <div>
+    <p id="oyako1">[親 or 子]</p>
+    <select name="oyako" id="oyako">
+      <option value="parent">親</option>
+      <option value="child">子</option>
+    </select>
+  </div>
+  <div>
+    <p id="tumo">[ツモ or ロン]</p>
+    <select name="tumo_ron" id="tumo_ron">
+      <option value="tumo">ツモ</option>
+      <option value="ron">ロン</option>
+    </select>
+  </div>
+   <div>
+    <p id="han">[翻数]</p>
+    <input type="number" id="hansu" name="hansu" min="1" value="0" required>
+  </div>
+  <div>
+    <p id="hu">[符数]</p>
+    <input type="number" id="husu" name="husu" min="0" value="0" required>
+    
+  </div>
+  <div>
+    <button id="total">計算する</button>
+    <hr>
+  </div>
+  </form>
+
+  <h2></h2>
+  <p id="result">
+
+  </p>
+
+  <script src="app.js"></script>
+</body>
+</html>
